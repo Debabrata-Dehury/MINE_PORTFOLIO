@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@;200;300;400,500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    width:100%;
+    height: 75px;
+    background-color: black;
+    line-height: 75px;
+    padding: 0px 80px;
+}
+nav .logo{
+    float:left;
+}
+nav .logo h2{
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color:#fff;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+nav ul li a:hover
+{
+    color: dodgerblue;    
+    
+}
+
+.checkbtn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+#check{
+    display: none;
+}
+.app-text{
+     padding-left: 50px;
+     
+     
+}
+.app-text h1{
+    color: whitesmoke;
+    font-size: 60px;
+    position: relative;
+    padding-top: 200px;
+    font-weight: 600;
+    line-height: 1.1;
+    
+}  
+.app-text h1 span{
+    color:#c32865;
+}
+.contact-page
+{
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ background-color: black;
+
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info{
+    color: white;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18 px;
+}
+
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+    flex:1;
+}
+
+.contact-form h2{
+    color:#fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box
+{
+    background:white;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child
+{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background: white;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+    float:right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height:40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+
+}
+
+.contact-form .send-btn:hover{
+    background: #0582E3;
+
+}
+
+@media  screen and (max-width:950px) 
+{
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+
+    .contact-form h2{
+        font-size: 30px;
+    }
+    
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 990px){
+    nav{
+        padding:0px 50px;
+    }
+    .checkbtn{
+        display: block;
+
+    }
+    nav .logo h2{
+        font-size: 30px;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 75px;
+        left:-100%;
+        text-align: center;
+        z-index: 10;
+        transition: 0.4s ease;
+    }
+    nav ul li{
+        display:block;
+        margin: 60px 0px;
+        line-height: 20px;
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+}
